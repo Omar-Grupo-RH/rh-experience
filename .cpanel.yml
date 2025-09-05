@@ -1,4 +1,5 @@
 ---
 deployment:
   tasks:
-    - /bin/rsync -av --delete dist/ ./
+    - export DEPLOY_DIR=/home/u28zr3un72zx/public_html/rhexperience.mx
+    - /bin/rsync -av --delete dist/ $DEPLOY_DIR/
